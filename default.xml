@@ -12,14 +12,14 @@
   <project name="decree" remote="s2e" revision="a523ec2ec1ca1e1369b33db755bed135af57e09c"/>
   <project name="guest-images" remote="s2e" revision="2afd9e4853936c3c38088272e90a927f62c9c58c"/>
   <project name="qemu" remote="s2e" revision="638782a47ed9bb3f280b57a3627bb4e11b2a9cf1"/>
-  <project name="s2e" remote="s2e" revision="c3b90c559146e78d40684f7f15d4a4fcf06a66c9"/>
+  <project name="s2e-divak" path="s2e" remote="divak"/>
 
   <!--
     One would normally clone s2e-env first, then run s2e init, which would call this repo script.
     We need to clone s2e-env a second time here so that it is possible to build the docker image.
     TODO: think about how to remove this.
   -->
-  <project name="s2e-env-divak" remote="divak"/>
+  <project name="s2e-env-divak" path="s2e-env" remote="divak"/>
 
   <project name="s2e-linux-kernel" remote="s2e" revision="1e2dfecfc6a3e70e7dea478184aa1f13653dcbe1"/>
 </manifest>
